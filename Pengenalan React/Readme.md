@@ -1,4 +1,5 @@
 📱 Pengenalan React Native
+
 React Native adalah framework open-source buatan Meta (Facebook) yang memungkinkan developer membangun aplikasi mobile lintas platform (Android dan iOS) hanya dengan satu basis kode JavaScript. Framework ini pertama kali dirilis pada tahun 2015, lahir dari kebutuhan Facebook untuk meningkatkan performa aplikasi mobile mereka.
 
 Berbeda dari pengembangan native tradisional yang membutuhkan dua kode terpisah (Swift untuk iOS dan Kotlin/Java untuk Android), React Native memungkinkan penggunaan komponen native (bukan webview) melalui komunikasi antara JavaScript dan kode native menggunakan bridge atau JSI (JavaScript Interface) terbaru.

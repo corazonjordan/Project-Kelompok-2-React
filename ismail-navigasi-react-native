@@ -1,1 +1,12 @@
+📚 MATERI NAVIGASI REACT NATIVE
+1. Pengantar Navigasi di React Native
+Navigasi adalah sistem berpindah antar layar (screen) dalam aplikasi. Karena React Native tidak menyertakan sistem navigasi secara default, maka digunakan library pihak ketiga, yang paling populer adalah React Navigation.
+2. Instalasi React Navigation
+Untuk menggunakan React Navigation, lakukan instalasi berikut:
+a. Instalasi dasar
+~~~
+npm install @react-navigation/native
+~~~
+
+
 

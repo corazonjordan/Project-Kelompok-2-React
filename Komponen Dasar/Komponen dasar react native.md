@@ -19,12 +19,15 @@ const App = () => {
   );
 };
 export default App;
+```
 
 2. Text
 Pada komponen ini untuk menampilkan teks di dalam aplikasi.
 Dapat mendukung penumpukan teks, dan acara sentuh beserta opsi gaya standar sepertii font khusus, ukuran font, dll.
 
 Code:
+
+```js
 import React from "react";
 import { View, Text } from "react-native";
 const App = () => {
@@ -36,12 +39,15 @@ const App = () => {
   );
 };
 export default App;
+```
 
 3. Image
 Komponen ini dapat memungkinkan kita dalam menambahkan gambar ke dalam aplikasi.
 Selain itu kita juga dapat menambahkan sebuah gambar jaringan sementara, gambar statis dan banyak lagi.
 
 Code:
+
+```js
 import React from "react";
 import { View, Text, Image } from "react-native";
 const App = () => {
@@ -66,6 +72,7 @@ const App = () => {
   );
 };
 export default App;
+```
 
 4. Text Input
 Komponen ini memungkiankan pengguna untuk menambahkan sebuah masukan.
@@ -73,6 +80,7 @@ Kita bisa menambahkan lebih banyak fungsi ke dalamnya dengan meneruskan properti
 Pada peristiwa lain, seperti onChange, onSubmitEditing, onScroll, dll., yang mana dapat digunakan untuk memodifikasi komponen TextInput.
 
 Code:
+```js
 import React from "react";
 import { View, Text, TextInput } from "react-native";
 const App = () => {
@@ -91,6 +99,7 @@ const App = () => {
   );
 };
 export default App;
+```
 
 5. ScrollView
 Komponen ini dapat digunakan untuk menggulir area tertentu secara horizontal atau vertikal. Dengan kata lain, kita bisa menggunakan ScrollView ketika kita memiliki banyak komponen anak yang tidak cukup dalam satu layar sekaligus.
@@ -98,6 +107,8 @@ Untuk menggunakannya kita hanya perlu membungkus bagian tersebut dalam komponen 
 ScrollView merender semua komponen anaknya dalam waktu bersamaan yang mungkin mengakibatkan rendering dan kinerja yang buruk.
 
 Code:
+
+```js
 import React from "react";
 import { View, Text, Image, ScrollView, TextInput } from "react-native";
 const App = () => {
@@ -111,3 +122,4 @@ const App = () => {
   );
 };
 export default App;
+```

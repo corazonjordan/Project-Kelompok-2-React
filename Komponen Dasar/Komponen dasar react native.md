@@ -4,6 +4,8 @@ Komponen dasar dalam React Native adalah elemen-elemen bawaan yang disediakan ol
 Komponen ini adalah sebuah wadah, div, atau bagian. Komponen tampilan menampilkan tayangan slide, teks, gambar, masukan pengguna, dan lainnya. Dalam artian lain View merupakan sebuah kontainer yang mendukung tata letak dengan flexbox, gaya, beberapa penanganan sentuhan, dan kontrol aksesibilitas.
 
 Code:
+
+```js
 import React from "react";
 import { View, Text } from "react-native";
 const App = () => {

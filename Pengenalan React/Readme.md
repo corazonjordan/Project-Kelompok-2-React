@@ -61,7 +61,7 @@ cd Contoh-App
 
 Setelah inisiasi Berikut Struktur folder dari hasil inisiasi sebelumnya:
 
-![Struktur Folder]()
+![Struktur Folder](https://github.com/corazonjordan/Project-Kelompok-2-React/blob/jordan--Pengenalan%26Impelementasi-React/Pengenalan%20React/Screenshot%202025-05-28%20222114.png)
 
 ### c. Contoh Pembuatan Portofolio sederhana berbasis Android 
 

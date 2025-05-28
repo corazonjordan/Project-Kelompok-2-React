@@ -124,14 +124,17 @@ Penjelasan Kode Navigasi:
   ```
 
   Lalu scan QR code dengan Expo Go di HP atau pilih “Run on Android/iOS simulator” di browser.
-  ![Expo]()
+  
+  ![Expo](https://github.com/corazonjordan/Project-Kelompok-2-React/blob/jordan--Pengenalan%26Impelementasi-React/Pengenalan%20React/Screenshot%202025-05-26%20225747.png)
 
 
-### e. Hasil Contoh-App Yang Sudah Di Buat
+### e. Hasil Contoh-App Portofolio berbasis Android Yang Sudah Di Buat
 
-![hasil]()
+![hasill](https://github.com/corazonjordan/Project-Kelompok-2-React/blob/jordan--Pengenalan%26Impelementasi-React/Pengenalan%20React/hasil1jpg.jpg)
+![hasil2](https://github.com/corazonjordan/Project-Kelompok-2-React/blob/jordan--Pengenalan%26Impelementasi-React/Pengenalan%20React/hasil3.jpg)
+![hasil3](![hasi2](https://github.com/corazonjordan/Project-Kelompok-2-React/blob/jordan--Pengenalan%26Impelementasi-React/Pengenalan%20React/hasil3.jpg)
 
-- Contoh App Portofolio berbasis Android
+
 
 
 

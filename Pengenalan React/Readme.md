@@ -131,7 +131,7 @@ Penjelasan Kode Navigasi:
 ### e. Hasil Contoh-App Portofolio berbasis Android Yang Sudah Di Buat
 
 ![hasill](https://github.com/corazonjordan/Project-Kelompok-2-React/blob/jordan--Pengenalan%26Impelementasi-React/Pengenalan%20React/hasil1jpg.jpg)
-![hasil2](https://github.com/corazonjordan/Project-Kelompok-2-React/blob/jordan--Pengenalan%26Impelementasi-React/Pengenalan%20React/hasil3.jpg)
+![hasil2](https://github.com/corazonjordan/Project-Kelompok-2-React/blob/jordan--Pengenalan%26Impelementasi-React/Pengenalan%20React/hasil2.jpg)
 ![hasil3](![hasi2](https://github.com/corazonjordan/Project-Kelompok-2-React/blob/jordan--Pengenalan%26Impelementasi-React/Pengenalan%20React/hasil3.jpg)
 
 

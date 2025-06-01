@@ -1,12 +1,228 @@
-📚 MATERI NAVIGASI REACT NATIVE
-1. Pengantar Navigasi di React Native
-Navigasi adalah sistem berpindah antar layar (screen) dalam aplikasi. Karena React Native tidak menyertakan sistem navigasi secara default, maka digunakan library pihak ketiga, yang paling populer adalah React Navigation.
-2. Instalasi React Navigation
-Untuk menggunakan React Navigation, lakukan instalasi berikut:
-a. Instalasi dasar
+📚 Materi Lengkap Navigasi di React Native
+1. Pendahuluan
+Navigasi dalam React Native memungkinkan pengguna berpindah antar layar dalam aplikasi. Library yang paling umum digunakan adalah React Navigation, yang menyediakan berbagai jenis navigator seperti Stack, Tab, dan Drawer.
+2. Instalasi dan Konfigurasi
+a. Inisialisasi Proyek
+npx create-expo-app ReactNavigationDemo
+cd ReactNavigationDemo
+Jika menggunakan Expo:
+npx create-expo-app ReactNavigationDemo
+cd ReactNavigationDemo
 ~~~
+npx expo start
+~~~
+b. Instalasi React Navigation dan Dependencies
+```
 npm install @react-navigation/native
-~~~
+```
+3. Jenis-Jenis Navigator
+| Jenis Navigator      | Keterangan                                                 |
+| -------------------- | ---------------------------------------------------------- |
+| **Stack Navigator**  | Navigasi berbasis tumpukan, seperti halaman yang ditumpuk. |
+| **Tab Navigator**    | Navigasi menggunakan tab di bawah atau atas layar.         |
+| **Drawer Navigator** | Navigasi dengan menu geser dari samping layar.             |
+
+```
+
+a. Struktur Proyek.
+
+ReactNavigationDemo/
+├── App.js
+└── screens/
+    ├── HomeScreen.js
+    └── DetailScreen.js```
+
+
+```
+
+b. Kode App.js
+
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+import HomeScreen from './screens/HomeScreen';
+import DetailScreen from './screens/DetailScreen';
+
+const Stack = createNativeStackNavigator();
+
+export default function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Detail" component={DetailScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
+```
+
+```
+
+c. Kode HomeScreen.js
+
+import React from 'react';
+import { View, Text, Button, StyleSheet } from 'react-native';
+
+export default function HomeScreen({ navigation }) {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>Home Screen</Text>
+      <Button
+        title="Go to Detail"
+        onPress={() => navigation.navigate('Detail', { name: 'Mail aldo' })}
+      />
+    </View>
+  );
+}
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  title: {
+    fontSize: 24,
+    marginBottom: 20
+  }
+});
+
+```
+
+```
+d. Kode DetailScreen.js
+
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+
+export default function DetailScreen({ route }) {
+  const { name } = route.params;
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>Detail Screen</Text>
+      <Text style={styles.subtitle}>Hello, {name}!</Text>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  title: {
+    fontSize: 24,
+    marginBottom: 10
+  },
+  subtitle: {
+    fontSize: 18
+  }
+});
+```
+
+e. Output
+Berikut adalah tampilan dari aplikasi:
+
+Home Screen: Menampilkan teks "Home Screen" dan tombol "Go to Detail".
+
+Detail Screen: Menampilkan teks "Detail Screen" dan sapaan "Hello, Mail aldo!".
+
+5. Navigasi dengan Parameter
+Untuk mengirim data antar layar, gunakan parameter saat navigasi:
+```
+navigation.navigate('Detail', { name: 'John Doe' });
+```
+6. Navigasi Bersarang (Nested Navigation)
+
+Contoh: Tab Navigator di dalam Stack Navigator.
+
+a. Instalasi Tab Navigator
+
+npm install @react-navigation/bottom-tabs
+
+
+b. Implementasi
+```
+
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+
+const Tab = createBottomTabNavigator();
+
+function MyTabs() {
+  return (
+    <Tab.Navigator>
+      <Tab.Screen name="Home" component={HomeScreen} />
+      <Tab.Screen name="Detail" component={DetailScreen} />
+    </Tab.Navigator>
+  );
+}
+
+// Di App.js
+<Stack.Navigator>
+  <Stack.Screen name="Main" component={MyTabs} />
+  <Stack.Screen name="Profile" component={ProfileScreen} />
+</Stack.Navigator>
+```
+
+7. Hook Navigasi
+
+| Hook               | Keterangan                                |
+| ------------------ | ----------------------------------------- |
+| `useNavigation()`  | Mendapatkan objek navigasi                |
+| `useRoute()`       | Mendapatkan parameter dari route saat ini |
+| `useFocusEffect()` | Menjalankan efek saat screen difokuskan   |
+
+8. Best Practice
+
+Gunakan NavigationContainer hanya sekali di root.
+
+Pisahkan navigasi per fitur agar modular.
+
+Gunakan React Context atau Redux jika butuh global state antar screen.
+
+Buat folder navigation/ untuk menyimpan konfigurasi navigator.
+
+Gunakan TypeScript jika memungkinkan agar navigasi lebih aman dari error nama screen atau parameter.
+
+
+9. Troubleshooting Umum
+
+
+| Masalah                    | Solusi                                                                |
+| -------------------------- | --------------------------------------------------------------------- |
+| Navigasi tidak berjalan    | Pastikan `NavigationContainer` digunakan di root                      |
+| Error gesture-handler      | Pastikan `import 'react-native-gesture-handler';` di file paling atas |
+| Blank screen saat navigate | Periksa nama screen dan komponen yang dipanggil                       |
+
+10. Sumber Belajar Lanjutan
+
+React Navigation Docs
+
+React Native Docs
+
+LogRocket: React Native Navigation Tutorial
+
+YouTube: Complex Navigation Flows with React Native
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
